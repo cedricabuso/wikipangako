@@ -1,0 +1,4 @@
+wikipangako
+===========
+
+Wikipangako repository.
