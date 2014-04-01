@@ -1,0 +1,696 @@
+/*
+  Created by Cedric Abuso on 8/20/2013.
+  Copyright (c) 2013 Cedric Abuso. All rights reserved.
+*/
+
+/*Body*/
+@font-face {
+    font-family: Delicious;
+    src: url("../font/Delicious.woff") format("woff");
+}
+@font-face {
+    font-family: Agile-Bold;
+    src: url("../font/Agile-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: Open-Sans-Regular;
+    src: url("../font/Open-Sans-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: Bobbleboddy-Light;
+    src: url("../font/Bobbleboddy-Light.woff") format("woff");
+}
+body {
+    font-family: 'Delicious';
+}
+
+/*Landing*/
+.background{
+    background: #FFF;
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open-Sans-Regular';
+}
+#content-main{
+    position: relative;
+    margin-top: 45px;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    background-color: #fff;
+    height: 100%;
+    min-height: 1150px !important;
+    -moz-box-shadow: 0px 0px 10px 6px #aaa;
+    -webkit-box-shadow: 0px 0px 10px 6px #aaa;
+    box-shadow: 0px 0px 10px 6px #aaa;
+}
+.mesh{
+    background: #FFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+}
+.navbar .nav{
+    font-size: 16px;
+}
+.navbar-fixed-top .nav>li>a{
+    color: #fff !important;
+    text-decoration: none;
+}
+.navbar-inverse .nav li.dropdown.open>.dropdown-toggle{
+    background-color: transparent !important;
+}
+.dropdown-menu>.active>a{
+    margin-top: -5px;
+    background-image: linear-gradient(to bottom,#fff,#fff) !important;
+    background-image: -moz-linear-gradient(top,#fff,#fff) !important;
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#fff)) !important;
+    background-image: -webkit-linear-gradient(top,#fff,#fff) !important;
+    background-image: -o-linear-gradient(top,#fff,#fff) !important;
+    background-image: linear-gradient(to bottom,#fff,#fff) !important;
+    background-color: #fff !important;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #000 !important;
+    cursor: text;
+    font-weight: bold;
+}
+.navbar-inverse .nav li.dropdown>.dropdown-toggle .caret {
+    border-top-color: #FFF !important;
+    border-bottom-color: #FFF !important;
+}
+ul.left-menu li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+
+/*News Feed*/
+.newsfeed{
+    position: relative;
+    margin-left: 285px;
+    padding: 10px;
+    border-left: 1px solid #d7d7d7;
+    min-height: 1361px !important;
+    min-width: 310px !important;
+    height: 100% !important;
+}
+.sort-top{
+    margin: 1px;
+    width: 77%;
+    display: inline-block;
+}
+.sort-right{
+    margin: 1px;
+    width: 14%;
+    display: inline-block;
+}
+.sort{
+    display: inline-block;
+    list-style: none;
+    margin: 0px;
+}
+#sort{
+    color: #959595;
+    font-weight: bold;
+}
+.post{
+    position: relative;
+    border-bottom: 2px solid #eee;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    min-height: 100px;
+    font-size: 16px;
+}
+.tagged-politician{
+    display: block;
+    margin-left: 90px;
+}
+.fullname{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.content{
+    position: relative;
+    width: 80%;
+    margin-left: 10px;
+    display: inline-block;
+    height: 100%;
+}
+.news-pic{
+    display: block;
+    max-width: 450px;
+    height: 300px;
+    padding-bottom: 10px;
+}
+.morecontent span {
+    display: none;
+}
+.date{
+    color: #999;
+    font-style: italic;
+    font-size: 16px;
+}
+#message{
+    margin-left: -19px;
+    overflow: hidden;
+    width: 106%;
+    resize: none;
+}
+.question{
+    margin-left: -8px !important;
+    width: 100% !important;
+}
+.upload{
+    margin-right: 15px;
+}
+.upload-wikip, .upload-question{
+    display: none;
+}
+.upload-wikip, .upload-wikip-btn, .upload-question{
+    border-left: 1px solid #d7d7d7;
+    padding: 10px 10px 1px 10px;
+    margin-left: 320px;
+    width: 65%;
+}
+.fileupload-preview{
+    margin-right: 5px !important;
+}
+.modal-header {
+    border-bottom: none;
+}
+.modal-body {
+    padding: 20px;
+}
+.share a, .share a:hover{
+    color: #fff !important;
+}
+.social-button{
+    color: #fff;
+    height: 18px;
+    width: 18px;
+    padding-right: 3px;
+    border-radius: 0px 10px;
+}
+
+/*Left Side Bar*/
+.left-bar{
+    padding-bottom: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 285px;
+    height: 95px;
+}
+.profile-preview{
+    height: 115px;
+    padding-left: 7px;
+    padding-top: 20px;
+    border-bottom: 1px solid #d7d7d7;
+}
+.profpic{
+    height: 90px;
+    width: 90px;
+    padding: 2px;
+    border: 1px solid #d7d7d7;
+}
+.profile-tab{
+    margin-top: 130px;
+}
+.firstname, .lastname{
+    margin-left: 105px;
+    display: block;
+}
+.firstname{
+    position: absolute;
+    margin-top: 0px;
+    font-size: 23px;
+}
+.lastname{
+    position: absolute;
+    margin-top: 30px;
+    font-size: 23px;
+}
+.know-first{
+    position: absolute;
+    margin-top: 0px;
+    font-size: 17px !important;
+}
+.watchlist-result .know-first{
+    font-size: 16px !important;
+}
+#towatch .details{
+    font-style: italic;
+    font-size: 18px;
+}
+.stats{
+    width: 165px;
+    margin-top: 55px;
+    margin-left: 105px;
+    position: absolute;
+    border-collapse: separate;
+}
+.stats-left, .stats-right{
+    width: 50%;
+    padding-left: 1px;
+    padding-right: 1px;
+    display: table-cell;
+}
+.stats-left button, .stats-right button{
+    width: 100%;
+}
+.stats-left a, .stats-right a{
+    color: #fff !important;
+    text-decoration: none;
+}
+.stats-left a:hover, .stats-right a:hover{
+    color: #fff !important;
+    text-decoration: none;
+}
+.nav-tabs.nav-stacked>li>a {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0px !important;
+    font-size: 16px;
+}
+.arrow{
+    font-weight: bold;
+    font-size: 20px;
+}
+#toknow, #towatch{
+    margin-left: 10px;
+}
+
+/*Watchlist*/
+#watchlist h4{
+    display: inline-block;
+}
+.watch-top{
+    width: 80%;
+    margin-top: -18px;
+    margin-left: 120px;
+}
+.watch-plus{
+    max-width: 8px;
+    padding: 1px 7px;
+    margin-top: -33px;
+    margin-left: 570px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #252525;
+}
+.plus:hover{
+    text-decoration: none !important;
+    font-weight: bold;
+    color: #fff;
+}
+.pic{
+    width: 75px;
+    height: 75px;
+    padding: 2px;
+    border: 1px solid #d7d7d7;
+}
+.watchlist-result{
+    position: relative;
+    display: inline-block;
+    background-color: #eee;
+    padding: 10px;
+    margin-top: 13px;
+    margin-left: 10px;
+    max-width: 280px;
+    min-width: 260px;
+    min-height: 80px;
+}
+#search-watchlist{
+    margin-top: 10px;
+}
+.add-watchlist, .add-watchlist-profile, .add-network-profile, .add-network{
+    font-size: 12px !important;
+    margin-left: 5px;
+}
+.input-append button.add-on {
+    height: inherit !important;
+}
+#search, #search-network, #watchlist{
+    padding-top: 20px;
+}
+.subtitle{
+    margin-left: 10px;
+}
+.my-watchlist{
+    position: relative;
+    display: block;
+    padding-bottom: 30px;
+}
+
+/*Politician*/
+#politician-container{
+    position: relative;
+}
+.results{
+    position: relative;
+    display: block;
+    padding-bottom: 30px;
+    height: 100% !important;
+}
+
+/*Politician Profile*/2
+#pane2 .upload-wikip-btn{
+    margin-left: 0px !important;
+    border-left: none;
+    width: 96%;
+}
+#pane1 .upload-wikip-btn, #pane3 .upload-wikip-btn{
+    margin-left: 0px !important;
+    border-left: none;
+    width: auto;
+}
+#pane1 form{
+    padding: 0px;
+    margin: 0px;
+}
+#pane1 .sort-right {
+    margin: 1px;
+    width: 13%;
+    display: inline-block;
+}
+#pane1 hr, #pane1 h4{
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 3px;
+}
+#pane1 textarea{
+    overflow: hidden;
+    width: 97%;
+    resize: none;
+}
+.politician-fullname{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.politician-subtitle{
+    margin-left: 10px;
+    font-style: italic;
+    font-size: 20px;
+}
+.politician-pic{
+    padding: 2px;
+    border: 1px solid #d7d7d7;
+    height: 160px;
+    width: 160px;
+}
+.politician-tab{
+    margin-top: 60px;
+}
+#politician-rating{
+    font-size: 40px;
+    font-weight: bold;
+}
+.politician-rate{
+    width: 135px;
+}
+#pane2 .title{
+    font-weight: bold;
+}
+
+/*Network*/
+.net-label{
+    display: inline-block !important;
+    margin-left: 5px;
+}
+#wikipangako{
+    margin-left: 15px;
+}
+
+/*User WikiPs*/
+.wikip-menu{
+    margin-left: 10px;
+}
+.wikip-menu .dropdown .close {
+    margin-top: -8px;
+    margin-left: 2px;
+}
+
+/*Footer*/
+.footer {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    clear:both;
+}
+.footer .navbar-inverse .navbar-inner{
+    background-color: #2D3E50 !important;
+    background-image: none !important;
+    background-repeat: no-repeat !important;
+    filter: none;
+}
+
+/*Accordion*/
+.ui-accordion .ui-accordion-content {
+    height: auto !important;
+}
+
+/*Moderator*/
+.approve-wikip, .reject-wikip{
+    margin-left: 5px;
+}
+
+/*Politician*/
+.answer{
+    margin-left: 0px;
+    overflow: hidden;
+    width: 100%;
+    resize: none;
+}
+.info-left{
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+/*tagging*/
+#s2id_wikip-politician, #s2id_ask-politician, #s2id_promise-politician {
+    width: 100% !important;
+}
+.share{
+    padding-right: 10px;
+}
+.comment .caption, .comment .caption:hover{
+    color: #333 !important;
+    text-decoration: none;
+}
+
+#toprow{
+    width: 50%;
+}
+.padding-div, .padding-div p, .padding-div .tab-content{
+    padding: 10px;
+}
+.last-edit{
+    padding-right: 10px;
+}
+.vote-up{
+    display: none;
+    color: #51a351;
+}
+.vote-down{
+    display: none;
+    color: #bd362f;
+}
+.vote-back{
+    display: none;
+    color: #49afcd;
+}
+
+#pane2 ul {
+    list-style-type: none !important;
+    margin: 0px !important;
+    font-size: 16px;
+}
+.head {
+    padding: 6px 12px !important;
+    width: 95% !important;
+    text-align: left !important;
+    font-size: 20px !important;
+}
+#pane2 .content { 
+    display:none;
+    width: 96.1%;
+    margin: 0px;
+    padding: 5px;
+    border-right: solid 2px #ddd;
+    border-bottom: solid 2px #ddd;
+    border-left: solid 2px #ddd;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: 1px;
+}
+.content p{
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.tooltip{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+}
+.notifications{
+    border-bottom: solid 1px #ddd;
+    border-top: solid 1px #ddd;
+    font-size: 14px;
+}
+.notifications button{
+    font-size: 10px;
+    margin-top: 0px;
+}
+.notif-count-request{
+    color: #fff;
+    background-color: red;
+    padding: 0px 5px 1px 5px;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 26px;
+    margin-top: 2px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.notif-count{
+    color: #fff;
+    background-color: red;
+    padding: 0px 5px 1px 5px;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 26px;
+    margin-top: 2px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.wikip-icons{
+    width: 30px !important;
+    height: 30px !important;
+    margin-bottom: -5px !important;
+    margin-top: -10px !important;
+}
+#siteTour{
+    width: 90% !important;
+    left: 25.6% !important;
+}
+#siteTour.in{
+    top: 5% !important;
+}
+#siteTour .modal-body{
+    padding: 0px !important;
+    max-height: 500px;
+    overflow-y: hidden !important;
+}
+.landing-title{
+    font-size: 45px;
+}
+.landing-row{
+    padding-bottom: 40px;
+    border-bottom: solid 2px #ddd;
+}
+.landing-bold{
+    font-family: 'Agile-Bold';
+}
+.landing-row p{
+    font-size: 35px;
+    line-height: 45px;
+    padding-bottom: 15px;
+}
+.landing-margin{
+    margin-left: 8%;
+}
+.landing-colored{
+    background-color: #319FD3;
+    min-height: 300px;
+}
+.landing-member{
+    color: #FFF;
+    font-size: 55px;
+}
+.landing-italic{
+    color: #FFF;
+    font-size: 20px;
+    font-style: italic;
+}
+.landing-footer{
+    background-color: #1e1e1e;
+    min-height: 200px;
+}
+.landing-link{
+    color: #FFF;
+    font-family: 'Agile-Bold';
+    font-size: 18px;
+}
+.landing-nav{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+.landing-nav li{
+    display:inline;
+    margin-right: 20px;
+}
+.landing-nav li a{
+    color: #FFF;
+    font-size: 12px;
+}
+.landing-nav li a:hover{
+    color: #ffcb0b;
+    text-decoration: none;
+}
+.landing-top{
+    border-top: 1px solid #FFF;
+}
+.landing-copyright{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 12px;
+}
+.wikip-short{
+    background-color: #319FD3;
+    opacity: 0;
+    height: 200px;
+    border: solid 1px #000;
+}
+.promise-short{
+    background-color: #ffcb0b;
+    opacity: 0;
+    height: 200px;
+    border: solid 1px #000;
+}
+.wikip-short img, .promise-short img{
+    width: 100% !important;
+    height: 275px;
+}
+.promise-text{
+    opacity: 0;
+    color: #fff;
+    width: 21%;
+    height: 196px;
+    padding: 2px;
+    z-index: 9999;
+    overflow: hidden;
+    text-align: left;
+    margin-top: 1px;
+    margin-left: -10.7%;
+    background-color: #ffcb0b;
+}
+.tambayan-caption{
+    padding-left: 68px;
+    display: block;
+}
+.donate-sidebar:hover{
+    text-decoration: none;
+}
+.politician-tab h3, h2{
+    font-size: 20.5px !important;
+}
+.infobox, .ambox-Refimprove, .ambox-BLP_sources, #toc{
+    display: none !important;
+}
