@@ -11,20 +11,27 @@ $database = null;
 function Connect(){
     global $database;
 
-    /*$services_json = json_decode(getenv("VCAP_SERVICES"),true);
-    $mysql_config = $services_json["mysql-5.1"][0]["credentials"];
-    $username = $mysql_config["username"];
-    $password = $mysql_config["password"];
-    $hostname = $mysql_config["hostname"];
-    $port = $mysql_config["port"];
-    $db = $mysql_config["name"];
+    //$services_json = json_decode(getenv("VCAP_SERVICES"),true);
+    //$mysql_config = $services_json["mysql-5.1"][0]["credentials"];
+    //$username = $mysql_config["username"];
+    //$password = $mysql_config["password"];
+    //$hostname = $mysql_config["hostname"];
+    //$port = $mysql_config["port"];
+    //$db = $mysql_config["name"];
 
-    $link = mysql_connect("$hostname:$port", $username, $password);
-    $database = new mysqli($hostname, $username, $password, $db, $port);*/
+    
+    $hostname = "mysql.hostinger.ph";
+    $username = "u828907785_wikip";
+    $password = "aZ5gWIwNz8DCCX7e0t";
+    $db = "u828907785_wikip";
 
-    //hostname, username, password, database_name
-    $link = mysql_connect("localhost", "root", "admin", "d35f26064181340a480fca8aced378726");
-    $database = new mysqli("localhost", "root", "admin", "d35f26064181340a480fca8aced378726");
+    //$hostname = "localhost";
+    //$username = "root";
+    //$password = "";
+    //$db = "wikipangako";
+
+    //$link = mysql_connect("$hostname:$port", $username, $password);
+    $database = new mysqli($hostname, $username, $password, $db);
 }
 
 function GetRoles($account_id){

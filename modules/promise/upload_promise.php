@@ -32,7 +32,7 @@ function UploadPromise(){
     echo   '
             </div>
             <form enctype="multipart/form-data" action="" method="POST">
-                <div class="modal fade hide" id="promise-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal fade hide" id="promise-form" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -86,8 +86,8 @@ function UploadPromise(){
     $data = str_replace(':', ': ', $data);
     if(isset($_GET['inner']) && $_GET['inner']=='user_wikip')
     echo "
-        <script>
-            $('#wikip-politician').select2({
+        <script type=\"text/javascript\">
+            $('#promise-politician').select2({
                 multiple: false,
                 placeholder: 'Tag a politician ...',
                 minimumInputLength: 1,

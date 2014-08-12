@@ -48,19 +48,19 @@ function landing(){
         <div class="background">
             <div>
                 <div class="row landing-row">
-                    <div class="landing-margin">
-                        <div class="span6">
-                            <span class="landing-title">Holding every <br><br> Filipino accountable.</span>
-                            <br><br>
-                            ';FacebookLogin(); echo'
-                            <br><br>
-                            <a href="setsession_guest.php"><img src="img/guest.png"/></a>
-                        </div>
+                    <div class="landing-margin">                        
                         <div class="span6 pagination-centered">
-                            <video class="pull-left" width="100%" height="290" style="margin-right:10%; min-width:250px;" controls>
+                            <video class="pull-left" width="100%" height="290" style="margin-right:10%; min-width:250px;" controls="">
                                 <source src="img/WikiPangako.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
+                        </div>
+												<div class="span6 pagination-centered">
+                            <span class="landing-title">Holding every <br><br> Filipino accountable.</span>
+                            <br><br>
+                            ';?> <?php FacebookLogin(); echo '
+                            <br><br>
+                            <a href="setsession_guest.php"><img src="img/guest.png"></a>
                         </div>
                     </div>
                 </div>

@@ -102,7 +102,7 @@ function Home(){
             </div>
             <div id="toprow" class="pull-left padding-div" style="width:45%;margin-right:3%;margin-top: -75%;font-size: 16px;">
                 <div>
-                    <h3>Articles</h3>';
+                    <h3>WikiPinions</h3>';
             echo    '<div>
                         <div class="news">
                             <img class="pull-left" style="width: 125px;padding-right: 20px;padding-left: 5px;" src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-prn1/t1/1948240_819343298081494_1524329200_n.jpg"/>
@@ -124,16 +124,6 @@ function Home(){
                         </div>
                     </div>';
         echo    '</div>
-            </div>
-            <div class="padding-div" width="48%">
-                <h3>Our Partners</h3>
-                <div class="center">
-                    <div id="cubershadow">
-                        <div id="cu3er-container">
-                            <a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="" /></a> 
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>';
 }

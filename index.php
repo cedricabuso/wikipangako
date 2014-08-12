@@ -9,8 +9,8 @@
     else 
         $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
     
-    if($pageURL=='http://wikipangako.com/')
-        header('Location: http://www.wikipangako.com/');
+    //if($pageURL=='http://wikipangako.com/')
+    //    header('Location: http://www.wikipangako.com/');
 
 ?>
 <html>
@@ -24,7 +24,8 @@
         <meta http-equiv="cleartype" content="on">
         <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
         <meta name="msapplication-TileColor" content="#222222">
-
+        <meta name='viewport' content='width=1190'>
+        
         <link href="img/favicon.ico" rel="shortcut icon" />
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
@@ -40,7 +41,6 @@
     </head>
     <body>
         <?php
-
         if(isset($_GET['read_only'])){
             require_once 'views/nav_bar/nav_bar.php';
             require_once 'views/footer/footer.php';
@@ -147,7 +147,7 @@
                         require_once 'views/left_side_bar_facebook/left_side_bar_facebook.php';
                         LeftSideBar_Facebook();
 
-                        if(isset($_GET['main']) && ($_GET['main']=='home' || $_GET['main']=='about' || $_GET['main']=='articles' || $_GET['main']=='contactus' || $_GET['main']=='ourteam' || $_GET['main']=='settings' || $_GET['main']=='donate' || $_GET['main']=='report' 
+                        if(isset($_GET['main']) && ($_GET['main']=='home' || $_GET['main']=='about' || $_GET['main']=='articles' || $_GET['main']=='contactus' || $_GET['main']=='ourteam' || $_GET['main']=='settings' || $_GET['main']=='donate' || $_GET['main']=='report'
                             || $_GET['main']=='search' || $_GET['main']=='ourpartners')){
                             if($_GET['main']=='home'){
                                 if(isset($_GET['inner']) && ($_GET['inner']=='tambayan' || $_GET['inner']=='watchlist' || $_GET['inner']=='network' || $_GET['inner']=='user_wikip' || $_GET['inner']=='politicians'

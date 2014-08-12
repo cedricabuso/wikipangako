@@ -118,7 +118,7 @@ function generatePromise($key){
     if($data5['done'][0]['done']==0 && $data5['inprogress'][0]['inprogress']==0 && $data5['failed'][0]['failed']==0)
         $people_say = 'This project/promise is still unrated.';
     else if( (max($data5['done'][0]['done'], $data5['inprogress'][0]['inprogress'], $data5['failed'][0]['failed'])) == $data5['done'][0]['done'] )
-        $people_say = 'Most people say this is <b style="color: #51a351;">Finished</b>.';
+        $people_say = 'Most people say this is <b style="color: #51a351;">Fulfilled</b>.';
     else if( (max($data5['done'][0]['done'], $data5['inprogress'][0]['inprogress'], $data5['failed'][0]['failed'])) == $data5['inprogress'][0]['inprogress'] )
         $people_say = 'Most people say this is <b style="color: #2f96b4">In Progress</b>.';
     else if( (max($data5['done'][0]['done'], $data5['inprogress'][0]['inprogress'], $data5['failed'][0]['failed'])) == $data5['failed'][0]['failed'] )

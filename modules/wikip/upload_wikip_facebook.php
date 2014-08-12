@@ -70,7 +70,7 @@ function UploadWikiPFacebook(){
             <br><br>
             <span class="pull-right" style="font-size: 16px;margin-right: -240px;">Want to share something confidential and keep your anonymity? Use this <a href="https://docs.google.com/forms/d/1b8z-YnnDFUFLxtlUYdEIZqmicu-25i7FJ9vJ66Bkovo/viewform" target="_blank">form</a>!</span>
             <form enctype="multipart/form-data" action="" method="POST" style="margin-top:-10px">
-                <div class="modal fade hide" id="wikip" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal fade hide" id="wikip" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">

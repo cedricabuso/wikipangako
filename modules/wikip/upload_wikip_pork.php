@@ -31,9 +31,9 @@ function UploadWikiPork($politician_id, $promise_id){
                 <br><br>
                 <div class="btn-group pull-right">';
     if($data4['is_selected'][0]['status']=='1')
-        echo        '<button id="'.$promise_id.'-finished" class="btn btn-success finished active" onclick="ratePromise(1, '.$_SESSION['account_id'].', '.$promise_id.', \''.$promise_id.'-finished\');"><i class="icon-white icon-ok"></i> Finished | <b class="finished-count">'.$data4['done'][0]['done'].'</b></button>';
+        echo        '<button id="'.$promise_id.'-finished" class="btn btn-success finished active" onclick="ratePromise(1, '.$_SESSION['account_id'].', '.$promise_id.', \''.$promise_id.'-finished\');"><i class="icon-white icon-ok"></i> Fulfilled | <b class="finished-count">'.$data4['done'][0]['done'].'</b></button>';
     else
-        echo        '<button id="'.$promise_id.'-finished" class="btn btn-inverse finished" onclick="ratePromise(1, '.$_SESSION['account_id'].', '.$promise_id.', \''.$promise_id.'-finished\');"><i class="icon-white icon-ok"></i> Finished | <b class="finished-count">'.$data4['done'][0]['done'].'</b></button>'; 
+        echo        '<button id="'.$promise_id.'-finished" class="btn btn-inverse finished" onclick="ratePromise(1, '.$_SESSION['account_id'].', '.$promise_id.', \''.$promise_id.'-finished\');"><i class="icon-white icon-ok"></i> Fulfilled | <b class="finished-count">'.$data4['done'][0]['done'].'</b></button>';
     if($data4['is_selected'][0]['status']=='2')
         echo        '<button id="'.$promise_id.'-inprogress" class="btn btn-info inprogress active" onclick="ratePromise(2, '.$_SESSION['account_id'].', '.$promise_id.', \''.$promise_id.'-inprogress\');"><i class="icon-white icon-tasks"></i> In Progress | <b class="inprogress-count">'.$data4['inprogress'][0]['inprogress'].'</b></button>';
     else

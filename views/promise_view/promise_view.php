@@ -24,7 +24,7 @@ function PromiseView($promise_id){
             if($data5['done'][0]['done']==0 && $data5['inprogress'][0]['inprogress']==0 && $data5['failed'][0]['failed']==0)
                 $people_say = 'This project/promise is still unrated.';
             else if( (max($data5['done'][0]['done'], $data5['inprogress'][0]['inprogress'], $data5['failed'][0]['failed'])) == $data5['done'][0]['done'] )
-                $people_say = 'Most people say this is <b style="color: #51a351;">Finished</b>.';
+                $people_say = 'Most people say this is <b style="color: #51a351;">Fulfilled</b>.';
             else if( (max($data5['done'][0]['done'], $data5['inprogress'][0]['inprogress'], $data5['failed'][0]['failed'])) == $data5['inprogress'][0]['inprogress'] )
                 $people_say = 'Most people say this is <b style="color: #2f96b4">In Progress</b>.';
             else if( (max($data5['done'][0]['done'], $data5['inprogress'][0]['inprogress'], $data5['failed'][0]['failed'])) == $data5['failed'][0]['failed'] )
@@ -86,9 +86,9 @@ function PromiseView($promise_id){
 
                         echo     '<div class="btn-group pull-right">';
                         if($data5['is_selected'] && $data5['is_selected'][0]['status']=='1')
-                            echo '<button id="'.$key['promise_id'].'-finished" class="btn btn-success finished active"><i class="icon-white icon-ok"></i> Finished | <b class="finished-count">'.$data5['done'][0]['done'].'</b></button>';
+                            echo '<button id="'.$key['promise_id'].'-finished" class="btn btn-success finished active"><i class="icon-white icon-ok"></i> Fulfilled | <b class="finished-count">'.$data5['done'][0]['done'].'</b></button>';
                         else
-                            echo '<button id="'.$key['promise_id'].'-finished" class="btn btn-inverse finished"><i class="icon-white icon-ok"></i> Finished | <b class="finished-count">'.$data5['done'][0]['done'].'</b></button>';
+                            echo '<button id="'.$key['promise_id'].'-finished" class="btn btn-inverse finished"><i class="icon-white icon-ok"></i> Fulfilled | <b class="finished-count">'.$data5['done'][0]['done'].'</b></button>';
                         if($data5['is_selected'] && $data5['is_selected'][0]['status']=='2')
                             echo '<button id="'.$key['promise_id'].'-inprogress" class="btn btn-warning inprogress active"><i class="icon-white icon-tasks"></i> In Progress | <b class="inprogress-count">'.$data5['inprogress'][0]['inprogress'].'</b></button>';
                         else

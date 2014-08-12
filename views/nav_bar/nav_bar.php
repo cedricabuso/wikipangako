@@ -42,7 +42,7 @@ function NavBar(){
                                     </ul>
                                 </li>
                             </li>
-                            <li><a href="?main=articles">Articles</a></li>
+                            <li><a href="?main=articles">WikiPinions</a></li>
                         </ul>
                     </div>
                     <div class="nav-collapse collapse">
